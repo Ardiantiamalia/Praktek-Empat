@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        //Jquery untuk menampilkan dan menghilangkan kotak
+        $(document).ready(function(){
+        setTimeout(function(){
+        $("#kotak").fadeOut("slow",function(){
+        $("#kotak").remove();
+        });
+        }, 3000);
+        });
+    </script>
+    <!--Untuk mengatur warna teks, warna dan ukuran kotak-->
+    <style>
+        #kotak {
+        width : 300px;
+        height : 50px;
+        background : lightyellow;
+        border : 1px solid black;
+        padding : 5px;
+        }
+    </style>
+    </head>
+    <body>
+      <h3 id="kotak"> <!--Untuk menampilkan pesan teks akan hilang dalam 3 detik-->
+          Perhatikan baik - baik teks ini, karena teks akan hilang dalam hitungan 3 detik
+      </h3>
+    </body>
+</html>

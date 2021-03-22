@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<!--Jquery untuk mengubah warna kotak dari kuning menjadi merah-->
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("div").dblclick(function(){
+	$(this).css({background: "red"});
+	});
+	$("div").mouseleave(function(){
+	$(this).css({background: "yellow"});
+	});
+	});
+</script>
+<!--Untuk menampilkan kotak berwarna kuning dengan ukuran seperti yang dibawah-->
+<style type="text/css">
+	div{
+		background: yellow;
+		width: 70px;
+		height: 70px;
+		float: left;
+		margin: 10px;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<p> Klik 2x pada setiap kotak untuk mengubah warnanya </p> <!--Untuk menampilkan teks-->
+	<div>
+	</div>
+	<div>  </div>
+	<div>  </div>
+	<div>  </div>
+	<div>  </div>
+</body>
+</html>

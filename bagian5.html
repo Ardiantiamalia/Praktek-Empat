@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $(".sembunyi").click(function() {$("#foto").hide("slow")}); //Parameter untuk kecepatan reaksi button sembunyi
+        $(".tampil").click(function() {$("#foto").show("slow")}); //Parameter untuk kecepatan reaksi button tampil
+        });
+    </script>
+    </head>
+    <body>
+        <button class="sembunyi">Sembunyikan</button> <!--Button untuk menyembunyikan gambar-->
+        <button class="tampil">Tampilkan</button> <!--Button untuk menampilkan gambar-->
+        <p><img id="foto" src="TikTok.jpg"></p>
+    </body>
+</html>

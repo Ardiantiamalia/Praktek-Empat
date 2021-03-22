@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        //Jquery untuk menampilkan teks dan warna background teks
+        $(document).ready(function(){
+        $("#daftar").addClass("merahkuning")
+        $(".subdaftar").addClass("kuninghitam");});
+    </script>
+    <!--Untuk menampilkan warna teks dan warna background teks-->
+    <style type="text/css"> 
+    .merahkuning {
+        color: red;
+        font-weight: bold;
+        background-color: yellow;
+        padding: 3px;
+    }
+    .kuninghitam{
+        color: blue;
+        background-color: green;
+    }
+    </style>
+    </head>
+    <body>
+        <div>
+            <p> Paragraf Pertama</p> <!--Untuk menampilkan teks paragraf pertama-->
+        </div>
+        <div>
+        <ul id="daftar"> <!--Untuk menampilkan daftar item-->
+            <li>Item 1</li>
+            <li class="subdaftar">Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        </div>
+    </body>
+</html>
